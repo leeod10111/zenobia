@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenobia | Middle Eastern Restaurant</title>
+    <meta
+      name="description"
+      content="Zenobia is an elegant Middle Eastern restaurant offering refined Levantine cuisine, handcrafted cocktails, and a warm, luxurious atmosphere."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="logo">
+          <img src="img/logo.png" alt="Zenobia logo" class="logo-image" />
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#booking">Book a Table</a>
+          <a href="#footer">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+      </div>
+    </header>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" aria-label="Zenobia restaurant hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="hero-kicker">Middle Eastern Dining</p>
+          <h1>Where Tradition Meets Warm Hospitality.</h1>
+          <p class="hero-subtitle">
+            Discover charcoal-grilled meats, vibrant mezze, and fragrant spices
+            from the heart of the Levant, reimagined in a contemporary setting.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Book a Table</a>
+            <a href="#menu" class="btn btn-ghost">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="about-text">
+            <h2>About Zenobia</h2>
+            <p>
+              Inspired by the legendary Queen Zenobia of Palmyra, Zenobia
+              celebrates the richness of Middle Eastern cuisine with a
+              contemporary, refined twist. Our chefs craft each dish with
+              time-honoured techniques, fragrant spices, and seasonal
+              ingredients.
+            </p>
+            <p>
+              From velvety hummus and smoky baba ghanoush to slow-braised lamb
+              and charcoal-grilled seafood, every plate is designed for sharing
+              and savouring together.
+            </p>
+            <p>
+              Step into a space of dark tones, golden details, and warm
+              hospitality—an intimate setting for late evenings, celebrations,
+              and everything in between.
+            </p>
+          </div>
+          <div class="about-image-wrapper">
+            <img
+              src="img/2.jpg"
+              alt="A table with Middle Eastern dishes at Zenobia"
+              class="about-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Parallax Banner -->
+      <section
+        class="parallax-banner"
+        aria-label="Zenobia atmosphere banner"
+        style="background-image: url('img/5.jpg');"
+      ></section>
+
+      <!-- Menu -->
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <h2>Our Menu</h2>
+          <p class="section-intro">
+            A curated selection of classic Middle Eastern dishes, crafted with
+            care and served with a touch of modern elegance.
+          </p>
+
+          <div class="menu-grid">
+            <!-- Group 1: Dips, Starters & Sides -->
+            <article class="menu-column">
+              <h3>Dips, Starters & Sides</h3>
+              <div class="menu-subgrid">
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Dips</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Hummus Zenobia</span>
+                        <span class="menu-item-price">£8</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Creamy chickpeas, tahini, lemon, extra virgin olive oil,
+                        toasted pine nuts.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Smoked Baba Ghanoush</span>
+                        <span class="menu-item-price">£9</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Fire-roasted aubergine, tahini, pomegranate molasses,
+                        fresh herbs.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Starters</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Crisp Falafel</span>
+                        <span class="menu-item-price">£9</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Herb-packed chickpea fritters, pickles, tahini, chilli
+                        zhug.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name"
+                          >Halloumi with Honey &amp; Za’atar</span
+                        >
+                        <span class="menu-item-price">£10</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Griddled halloumi, wildflower honey, toasted sesame and
+                        za’atar.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Sides</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Saffron Rice</span>
+                        <span class="menu-item-price">£6</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Fragrant basmati rice with saffron and toasted
+                        vermicelli.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name"
+                          >Charred Seasonal Vegetables</span
+                        >
+                        <span class="menu-item-price">£7</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Charcoal-grilled vegetables, lemon, garlic and herbs.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- Group 2: Wraps & Mains -->
+            <article class="menu-column">
+              <h3>Wraps &amp; Mains</h3>
+              <div class="menu-subgrid">
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Arabian Wraps</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Lamb Kofta Wrap</span>
+                        <span class="menu-item-price">£16</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Charcoal-grilled lamb kofta, tahini, tomato, pickles and
+                        herbs in warm flatbread.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Chicken Shawarma Wrap</span>
+                        <span class="menu-item-price">£15</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Marinated chicken, garlic sauce, lettuce, pickled
+                        turnip, fries.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Mains from the Grill</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Lamb Kofta Skewers</span>
+                        <span class="menu-item-price">£18</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Charcoal-grilled spiced lamb, smoked labneh, grilled
+                        flat bread.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Sumac Chicken</span>
+                        <span class="menu-item-price">£17</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Free-range chicken marinated with sumac, lemon and
+                        garlic, served with saffron rice.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Charred Sea Bass</span>
+                        <span class="menu-item-price">£22</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Whole sea bass, chermoula, roasted lemon, herb salad.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- Group 3: Drinks -->
+            <article class="menu-column">
+              <h3>Drinks</h3>
+              <div class="menu-subgrid">
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Soft Drinks</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Fresh Mint Lemonade</span>
+                        <span class="menu-item-price">£6</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        House-made lemonade with fresh mint and orange blossom.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Pomegranate Soda</span>
+                        <span class="menu-item-price">£5</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Sparkling pomegranate and hibiscus refresher.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Cocktails &amp; Beers</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Eastern Nightfall</span>
+                        <span class="menu-item-price">£13</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Saffron gin, citrus, rose and pomegranate.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Lebanese Pale Ale</span>
+                        <span class="menu-item-price">£7</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Light, aromatic ale with eastern spice notes.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu-subcolumn">
+                  <h4 class="menu-subtitle">Wine List</h4>
+                  <ul class="menu-list">
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Lebanese White, Glass</span>
+                        <span class="menu-item-price">£9</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Aromatic white with citrus, stone fruit and floral
+                        notes.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="menu-item-header">
+                        <span class="menu-item-name">Lebanese Red, Bottle</span>
+                        <span class="menu-item-price">£42</span>
+                      </div>
+                      <p class="menu-item-desc">
+                        Rich, spiced red with dark berries and soft tannins.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- Group 4: Desserts -->
+            <article class="menu-column">
+              <h3>Desserts</h3>
+              <ul class="menu-list">
+                <li>
+                  <div class="menu-item-header">
+                    <span class="menu-item-name">Pistachio Baklava</span>
+                    <span class="menu-item-price">£9</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Layered filo pastry, pistachios, orange blossom syrup.
+                  </p>
+                </li>
+                <li>
+                  <div class="menu-item-header">
+                    <span class="menu-item-name">Cardamom Crème Brûlée</span>
+                    <span class="menu-item-price">£9</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Silky custard infused with cardamom, crisp caramel top.
+                  </p>
+                </li>
+                <li>
+                  <div class="menu-item-header">
+                    <span class="menu-item-name">Rose &amp; Pistachio Ice Cream</span>
+                    <span class="menu-item-price">£8</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Traditional booza-style ice cream with rose, pistachio and
+                    mastic.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Widget -->
+      <section id="booking" class="section booking-section">
+        <div class="container booking-grid">
+          <div class="booking-copy">
+            <h2>Book a Table</h2>
+            <p>
+              Reserve your evening at Zenobia. For parties of eight or more,
+              or for private dining, please contact us directly.
+            </p>
+            <div class="booking-image-wrapper">
+              <img src="img/9.jpg" alt="Book a Table" class="booking-image" />
+              <div class="booking-image-overlay"></div>
+            </div>
+          </div>
+          <div class="booking-form">
+            <!-- resOS Booking widget v3 script START -->
+            <a
+              class="resos-booking-widget"
+              href="https://zenobia.resos.com/booking"
+              data-lang="en"
+              data-restaurant-id="fwAXDQKkFZhCmsej7"
+              data-domain="zenobia.resos.com"
+              >Book a table</a
+            >
+            <div
+              id="resos-booking-script-3"
+              style="
+                text-align: center;
+                opacity: 0.6;
+                font-size: 70%;
+                margin-top: 10px;
+              "
+            >
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://resos.com?utm_source=restaurantsite&utm_medium=bookingwidget&utm_term=Restaurant-booking-system"
+                >Restaurant booking system by resOS</a
+              >
+            </div>
+            <script type="text/javascript">
+              (function () {
+                const scr = document.createElement("script");
+                scr.src =
+                  "https://zenobia.resos.com/embed/booking/widget.js?ts=" +
+                  new Date().getTime();
+                document
+                  .getElementById("resos-booking-script-3")
+                  .appendChild(scr);
+              })();
+            </script>
+            <!-- resOS Booking widget v3 script END -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-block">
+          <h3>Zenobia</h3>
+          <p>
+            123 Golden Crescent<br />
+            Newcastle, UK
+          </p>
+        </div>
+        <div class="footer-block">
+          <h3>Hours</h3>
+          <p>
+            Mon–Thu: 5pm – 11pm<br />
+            Fri–Sat: 5pm – midnight<br />
+            Sun: 4pm – 10pm
+          </p>
+        </div>
+        <div class="footer-block">
+          <h3>Contact</h3>
+          <p>
+            <a href="tel:+440000000000">+44 (0) 00 0000 0000</a><br />
+            <a href="mailto:reservations@Zenobia.com"
+              >reservations@Zenobia.com</a
+            >
+          </p>
+        </div>
+        <div class="footer-block">
+          <h3>Follow</h3>
+          <p class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Zenobia. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Set current year in footer
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear().toString();
+      }
+
+      // Mobile navigation toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const navBackdrop = document.querySelector(".nav-backdrop");
+      const bodyEl = document.body;
+      const navLinks = document.querySelectorAll(".main-nav a");
+
+      function closeNav() {
+        bodyEl.classList.remove("nav-open");
+        if (navToggle) {
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      }
+
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          const isOpen = bodyEl.classList.toggle("nav-open");
+          navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+      }
+
+      if (navBackdrop) {
+        navBackdrop.addEventListener("click", closeNav);
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (bodyEl.classList.contains("nav-open")) {
+            closeNav();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
