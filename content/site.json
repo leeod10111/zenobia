@@ -1,0 +1,28 @@
+{
+    "hero": {
+        "kicker": "Middle Eastern Dinings",
+        "title": "Where Tradition Meets Warm Hospitality.",
+        "subtitle": "Discover charcoal-grilled meats, vibrant mezze, and fragrant spices from the heart of the Levant, reimagined in a contemporary setting."
+    },
+    "about": {
+        "title": "About Zenobia",
+        "body": "Inspired by the legendary Queen Zenobia of Palmyra, Zenobia is a tribute to the elegance and depth of Middle Eastern gastronomy, reimagined with a refined contemporary touch.\r\n\r\nOur kitchen honours time-hallowed traditions, where fragrant spices, slow craftsmanship, and the finest seasonal ingredients come together in quiet harmony. From silken hummus and delicately smoked moutabal to expertly charcoal-grilled meats, each dish is composed to be an invitation to savour, connect, and indulge.\r\n\r\nGolden details, soft light, and the gentle perfume of charcoal create an atmosphere of understated luxury. Zenobia is a place for lingering evenings, intimate celebrations, and moments that unfold slowly \u2014 just as exceptional dining should."
+    },
+    "booking": {
+        "title": "Book a Table",
+        "intro": "Reserve your evening at Zenobia. For parties of eight or more, or for private dining, please contact us directly."
+    },
+    "contact": {
+        "phone": "07388 674435",
+        "email": "Zenobiaarabian@gmail.com",
+        "address": "205 Chillingham Rd\r\nNewcastle upon Tyne NE6 5LJ",
+        "instagram": "zenobiaarabian"
+    },
+    "images": {
+        "heroBackground": "img/6.jpg",
+        "aboutImage": "img/2.jpg",
+        "parallaxImage": "img/5.jpg",
+        "bookingImage": "img/9.jpg"
+    },
+    "menu": []
+}

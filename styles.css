@@ -556,8 +556,13 @@ body.nav-open .nav-backdrop {
   flex-direction: column;
   gap: 1.1rem;
   li {
-    max-width: 90%;
+    max-width: 100%;
   }
+}
+
+.menu-column > .menu-item-desc {
+  max-width: 40rem;
+  margin: -0.35rem 0 1rem;
 }
 
 .menu-subgrid {

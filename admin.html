@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenobia Admin</title>
+    <link rel="stylesheet" href="admin-styles.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <header class="admin-header">
+        <h1>Zenobia Admin</h1>
+        <button id="logout-btn" class="secondary">Logout</button>
+      </header>
+
+      <main class="admin-main">
+        <section id="login-section" class="card">
+          <h2>Login</h2>
+          <form id="login-form">
+            <label>
+              Password
+              <input
+                type="password"
+                id="admin-password"
+                autocomplete="current-password"
+                required
+              />
+            </label>
+            <button type="submit">Login</button>
+            <p id="login-error" class="error hidden"></p>
+          </form>
+        </section>
+
+        <section id="content-section" class="card hidden">
+          <nav class="tabs">
+            <button data-tab="hero" class="tab active">Hero</button>
+            <button data-tab="about" class="tab">About</button>
+            <button data-tab="booking" class="tab">Booking</button>
+            <button data-tab="contact" class="tab">Contact</button>
+            <button data-tab="images" class="tab">Images</button>
+            <button data-tab="menu" class="tab">Menu</button>
+          </nav>
+
+          <div id="tab-hero" class="tab-panel active">
+            <h2>Hero Section</h2>
+            <label>
+              Kicker
+              <input type="text" id="hero-kicker" />
+            </label>
+            <label>
+              Title
+              <input type="text" id="hero-title" />
+            </label>
+            <label>
+              Subtitle
+              <textarea id="hero-subtitle" rows="3"></textarea>
+            </label>
+          </div>
+
+          <div id="tab-about" class="tab-panel">
+            <h2>About Section</h2>
+            <label>
+              Title
+              <input type="text" id="about-title" />
+            </label>
+            <label>
+              Body
+              <textarea id="about-body" rows="8"></textarea>
+            </label>
+          </div>
+
+          <div id="tab-booking" class="tab-panel">
+            <h2>Booking Section</h2>
+            <label>
+              Title
+              <input type="text" id="booking-title" />
+            </label>
+            <label>
+              Intro
+              <textarea id="booking-intro" rows="4"></textarea>
+            </label>
+          </div>
+
+          <div id="tab-contact" class="tab-panel">
+            <h2>Contact</h2>
+            <label>
+              Phone
+              <input type="text" id="contact-phone" />
+            </label>
+            <label>
+              Email
+              <input type="email" id="contact-email" />
+            </label>
+            <label>
+              Address
+              <textarea id="contact-address" rows="3"></textarea>
+            </label>
+            <label>
+              Instagram
+              <input type="text" id="contact-instagram" />
+            </label>
+          </div>
+
+          <div id="tab-images" class="tab-panel">
+            <h2>Images</h2>
+            <label>
+              Hero background image
+              <input type="text" id="img-hero" placeholder="img/6.jpg" />
+            </label>
+            <label>
+              About section image
+              <input type="text" id="img-about" placeholder="img/2.jpg" />
+            </label>
+            <label>
+              Parallax banner image
+              <input type="text" id="img-parallax" placeholder="img/5.jpg" />
+            </label>
+            <label>
+              Booking section image
+              <input type="text" id="img-booking" placeholder="img/9.jpg" />
+            </label>
+          </div>
+
+          <div id="tab-menu" class="tab-panel">
+            <h2>Menu (advanced JSON)</h2>
+            <p class="hint">
+              Edit the menu structure as JSON. Each section should look like:
+              <code>
+                [{ "title": "Starters &amp; Mezze", "groups": [
+                { "title": "Cold Mezze", "items": [ { "name": "...",
+                "price": "£0.00", "description": "..." } ] } ] }]
+              </code>
+            </p>
+            <textarea id="menu-json" rows="18"></textarea>
+            <p id="menu-error" class="error hidden"></p>
+          </div>
+
+          <button id="save-btn">Save changes</button>
+          <p id="save-status" class="status"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="admin-script.js"></script>
+  </body>
+</html>
+
